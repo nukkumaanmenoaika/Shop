@@ -1,0 +1,423 @@
+head {
+  background-size: contain;
+}
+
+body {
+	background-color: #FFDEAD;
+	overflow-x: hidden;
+
+}
+a 
+{
+	text-decoration: none;
+}
+
+.text {
+  font-family: "Yanone Kaffeesatz", Cursive;
+  font-size: 100px;
+  display: flex;
+  position: absolute;
+  top: 3%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  margin-top: 30px;
+
+
+  .wrapper {
+    padding: 10px;
+    .letter {
+      transition: ease-out 0.4s;
+      transform: translateY(35%);
+    }
+    &:hover {
+      .letter {
+        transform: translateY(-1%);
+      }
+    }
+  }
+}
+
+.overlay {
+  	position: absolute;
+	top: 0%;
+	font-size: 65px;
+	width: 99.1%;
+	border: solid 1px;
+	box-sizing: border-box;
+	padding: 83px;
+	background-color: rgba(0,0,0,0.9);
+}
+
+.categories {
+  color: #000000;
+  font-family: "Luminari", fantasy;
+  position: relative;
+  z-index: 1;
+  top: 19%;
+  left: 16%;
+  font-size: 30px;
+  text-align: center;
+  display: inline-block;
+  margin-right: 70px;
+  cursor: pointer;
+
+}
+
+.categories:active .contacts {
+  display: block;
+}
+
+.contacts {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+  background-color: #ffffff;
+  padding: 10px;
+  border: 1px solid #000000;
+  text-align: left;
+  font-size: 16px;
+}
+
+.perfoms {
+	font-family: "Luminari", fantasy;
+	font-size: 25px;
+	position: relative;
+	top: 125%;
+	text-align: center;
+	border: solid 1px;
+	box-sizing: border-box;
+	border-top-style: none;
+	border-left-style: none;
+	border-right-style: none;
+	padding: 10px;
+}
+
+
+#header_buyer {
+	position: absolute;
+	top: 115%;
+	font-size: 65px;
+	font-family: "Apple Chancery", Cursive;
+	width: 99.1%;
+	text-align: center;
+	color: white;
+	border: solid 1px;
+	box-sizing: border-box;
+	padding: 5px;
+	background-color: rgba(0,0,0,0.9);
+	border-color: black;
+}
+
+.text1 {
+	font-family: "Yanone Kaffeesatz", Cursive;
+	font-size: 100px;
+	display: flex;
+	position: absolute;
+	padding-bottom: 10px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+
+}
+.letter{
+	margin-right: 10px;
+}
+
+.overlay1 {
+  	position: absolute;
+	top: 25.5%;
+	width: 99.1%;
+	border: solid 1px;
+	box-sizing: border-box;
+	padding: 59px;
+	background-color: rgba(0,0,0,0.9);
+}
+
+#header_stocs {
+	position: absolute;
+	top: 25%;
+	font-size: 65px;
+	font-family: "Apple Chancery", Cursive;
+	width: 99.1%;
+	text-align: center;
+	color: white;
+	border: solid 1px;
+	box-sizing: border-box;
+	padding: 5px;
+	background-color: rgba(0,0,0,0.9);
+	border-color: black;
+}
+
+.categories:hover {
+	animation-name: scale;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+}
+
+.product-image img {
+	height: 400px;
+	width: 500px;
+	margin-bottom: 15px;
+	border: 7px solid #000;
+	animation: border-animation 3s infinite;
+	border-radius: 10px;
+}
+
+@keyframes border-animation 
+{
+	0% {
+		border-color: #ee82ee;
+	}
+	25% {
+		border-color: #ffff00;
+	}
+	50% {
+		border-color: #008000;
+	}
+	75% {
+		border-color: #0000ff;
+	}
+	100% {
+		border-color: #ee82ee;
+	}
+}
+
+
+.price {
+	border: solid 1px;
+	background-color: rgba(0,0,0,0.87);
+	border-color: black;
+	color: #FFE4E1;
+	font-family: "Luminari", fantasy;
+	font-size: 25px;
+	text-align: center;
+}
+
+.product-name {
+	border: solid 1px;
+	background-color: rgba(0,0,0,0.87);
+	border-color: black;
+	color: white;
+	font-family: "Luminari", fantasy;
+	font-size: 30px;
+	text-align: center;
+}
+.product-text {
+	border: solid 1px;
+	background-color: rgba(0,0,0,0.5);
+	border-color: black;
+	color: white;
+	font-family: "Luminari", fantasy;
+	text-align: center;
+	font-size: 25px;
+	margin-bottom: 1px;
+}
+
+.product-name:hover 
+{
+	animation-name: scale;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+}
+
+
+
+@keyframes scale 
+{
+	0% {
+		transform: scale(1);
+		border-color: black;
+		border-width: 0px;
+	}
+
+	100% {
+		transform: scale(1.2);
+		border-color: white;
+		border-width: 2px;
+	}
+}
+
+#product-one {
+	position: absolute;
+	top: 40%;
+	left: 692px;
+	
+}
+
+#product-two {
+  	position: absolute;
+  	top: 40%;
+	left: 71px;
+}
+
+.price del {
+  margin-left: 10px;
+  font-size: 20px;
+  color: red;
+  text-decoration: line-through;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
+
+
+#product-three {
+	position: absolute;
+	top: 40%;
+	left: 1305px;
+}
+
+#product-four {
+	position: absolute;
+	top: 160%;
+	left: 692px;
+}
+
+#product-five {
+	position: absolute;
+	top: 160%;
+	left: 71px;
+
+}
+
+#product-six {
+	position: absolute;
+	top: 160%;
+	left: 1305px;
+}
+
+#header_new_model {
+	position: absolute;
+	top: 146%;
+	font-size: 65px;
+	font-family: "Apple Chancery", Cursive;
+	width: 99.2%;
+	text-align: center;
+	color: white;
+	border: solid 1px;
+	box-sizing: border-box;
+	padding: 5px;
+	background-color: rgba(0,0,0,0.9);
+	border-color: black;
+}
+
+#Slogan{
+	color: black;
+	font-family: "Luminari", fantasy;
+	font-size: 30px;
+	position: absolute;
+	top: 243%;
+	left: 0.4%;
+	border-bottom: dotted 4px;
+	border-color: black;
+	box-sizing: border-box;
+	padding: 10px;
+	width: 99.1%;
+	text-align: center;
+}
+
+#logo img{
+	position: absolute;
+	top: 249%;
+	width: 200px;
+	height: 120px;
+	left: 45%;
+}
+
+#one_line{
+	position: absolute;
+	top:255%;
+	left:55%;
+	border-bottom: 7px solid black;
+	width: 75px;
+	animation: animation_one 8s linear infinite;
+}
+
+
+#two_line{
+	position: absolute;
+	top:255%;
+	left: 41%;
+	border-bottom: 7px solid black;
+	width: 75px;
+	animation: animation_two 8s linear infinite;
+}
+	
+@keyframes animation_one{
+	0% {
+		border-color: black;
+		left:55%;
+	}
+	25% {
+		border-color:blueviolet;
+	}
+	50% {
+		border-color: black;
+		left: 90%
+	}
+	75% {
+		border-color: blueviolet;
+	}
+	100% {
+		border-color: b;
+		left:55%;
+	}
+}
+
+@keyframes animation_two{
+	0% {
+		border-color: black;
+		left:41%;
+	}
+	25% {
+		border-color: blueviolet;
+	}
+	50% {
+		border-color: black;
+		left: 5%
+	}
+	75% {
+		border-color: blueviolet;
+	}
+	100% {
+		border-color: black;
+		left: 41%;
+	}
+}
+
+#konez{
+	position: absolute;
+	top: 261.8%;
+	border-top: dotted 4px black;
+	border-right: dotted 4px black;
+	border-left: dotted 4px black;
+	background: linear-gradient(to right, #ffffff, #f0e4a5);;
+	width: 99.1%;
+	padding: 40px;
+	font-family: "Roboto", cursive;
+	box-sizing: border-box;
+}
+
+#konez2{
+	position: absolute;
+	top: 263.9%;
+	font-family: "Roboto", cursive;
+	font-size: 18px;
+	padding-left: 3%;
+}
+
+.icon-container {
+	position: absolute;
+	display: flex;
+	align-items: flex-end;
+	left: 75%;
+	top: 265%
+  }
+  
+  .icon {
+	width: 65px;
+	height: 40px;
+  }
